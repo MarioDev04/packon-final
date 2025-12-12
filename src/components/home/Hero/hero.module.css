@@ -144,8 +144,53 @@
   z-index: 0; 
   pointer-events: none; /* Garante que não atrapalhe cliques */
 }
+@media (max-width: 1420px) {
+.title {
+  font-size: clamp(3rem, 4vw, 4rem);
 
-/* Ajuste sutil para mobile para a luz não ficar muito forte em tela pequena */
+  max-width: 1000px;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: #b1b1b1;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+.card {
+  width: 280px; 
+  height: 350px; 
+  position: absolute;
+  left: 0;
+  top: 50%;
+  
+  border-radius: 18px;
+  overflow: hidden;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.ctaButton {
+  margin-bottom: 5vh;
+  padding: 0.8rem 3rem;
+  border-radius: 999px;
+  border: 1px solid #FFDA45;
+  background: #FFDA45;
+  color: #020202;
+  font-size: clamp(1rem, 1vw, 1rem);
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 20;
+}
+}
+
 @media (max-width: 768px) {
   .carouselGlow {
     width: 90%;

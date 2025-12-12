@@ -203,7 +203,7 @@
   color: white;
   outline: none;
   font-size: 0.85rem;
-  width: 180px;
+  width: 10px;
   padding-right: 0.5rem;
 }
 .searchInput::placeholder { color: rgba(255, 255, 255, 0.5); }
@@ -261,9 +261,9 @@
   transition: opacity 0.3s;
 }
 
-/* =========================================
-   MEDIA QUERIES (A Mágica acontece aqui)
-   ========================================= */
+@media (max-width: 1420px) {
+
+}
 
 @media (max-width: 1024px) {
     .header {
